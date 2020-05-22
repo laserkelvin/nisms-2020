@@ -1,0 +1,53 @@
+
+html {
+    font-family: "Work Sans", "Helvetica";
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    font-size: 24px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #f9efde;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display";
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    max-width: 60%;
+    display: inline-block;
+    text-align: left;
+}
+
+p.drop-cap:first-letter {
+    font-size: 4.5em;
+    float: left;
+    margin-top: .05em;
+}
+
+a {
+    color: #b85231;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+figcaption {
+    font-style: italic;
+    font-weight: 100;
+}
