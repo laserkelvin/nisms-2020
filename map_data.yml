@@ -1,0 +1,43 @@
+locations:
+  csic:
+    iso: ESP
+  fritz-haber:
+    iso: DEU
+  emory:
+    iso: USA
+  grenoble:
+    iso: FRA
+  jila:
+    iso: USA
+  saclay:
+    iso: FRA
+  cfa:
+    iso: USA
+  rennes:
+    iso: FRA
+  brown:
+    iso: USA
+  unsw:
+    iso: AUS
+  radboud:
+    iso: NLD
+  koln:
+    iso: DEU
+  bologna:
+    iso: ITA
+  lille:
+    iso: FRA
+  boston:
+    iso: USA
+  kcl:
+    iso: GBR
+  manitoba:
+    iso: CAN
+  davis:
+    iso: USA
+  madison:
+    iso: USA
+  louvain:
+    iso: BEL
+  ben-guirion:
+    iso: ISR

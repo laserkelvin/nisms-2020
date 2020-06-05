@@ -4,21 +4,25 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Not ISMS 2020</title>
+  <title>NISMS 2020</title>
   <meta name="description" content="An online virtual meeting for early career researchers in physical chemistry.">
   <meta name="author" content="NISMS Commitee">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Work+Sans">
-<link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display">
+  <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
 </head>
 
 <body>
   <script src="js/scripts.js"></script>
-  <h1>Not ISMS 2020</h1>
+  <img src="logo.svg">
 
   <h2> Virtual conference for early career Physical Chemistry researchers </h2>
 
@@ -32,11 +36,53 @@
       in a scientifically and socially enriching environment.
   </p>
 
-  <p> Registration is free, and necessary for us to communicate details about the conference to you all.
-      You can register by going to <a href="https://forms.gle/BFYWAidmMbKJy1d68">this link here.</a>
+  <div>
+    <p>
+      For these reasons, we—the organizers—decided to host our own virtual meeting to help early career researchers
+      meet other likeminded people, and have the opportunity to present their work in a professional setting. The 
+      <em>Not International Seminars of Molecular Spectroscopy</em> (NISMS) serves to try and connect chemists, spectroscopists,
+      and physicists from many timezones, in a celebration of all things of frequency and intensity.
+    </p>
+  </div>
+
+  <div>
+      <p> Registration is free, and necessary for us to communicate details about the conference to you all.
+      You can register by going to <a href="https://forms.gle/BFYWAidmMbKJy1d68">this link here.</a> As we get
+      closer to the final date, we will be adding the session times in the table below.
   </p>
 
-  <script src="line.js"></script>
+  </div>
+
+  <div>
+  <p>
+    We now have 24 confirmed speakers from all over the world!
+  </p>
+  </div>
+
+  <div id="map-container">
+
+  <embed src="map.html" width=1200px height=600px>
+
+  </div>
+  <hr>
+
+  <h2>List of confirmed speakers</h2>
+
+  <object id="confirmed" data="speakers.html" style="width: 70%; height: 800px"></object>
+
+  <!-- <div>
+    <table id="confirmed" style="width: 100%" class="display">
+      <thead>
+        <tr>
+          <th>Speakers</th>
+          <th>Institution</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+    </table>
+  </div> -->
+
+  <!-- <script src="line.js"></script> -->
   <div>
       <figure>
         <img src="line.svg">
@@ -45,4 +91,13 @@
   </div>
 
 </body>
+
+<!-- <script type="text/javascript">
+  $(document).ready(function() {
+    $('#confirmed').DataTable( {
+        "ajax": './speakers.json'
+    } );
+} );
+</script> -->
+
 </html>
