@@ -10,6 +10,10 @@ html {
     background-color: #f9efde;
 }
 
+footer {
+    font-size: small;
+}
+
 h1, h2, h3 {
     font-family: "Playfair Display";
 }
