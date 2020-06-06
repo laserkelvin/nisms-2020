@@ -25,3 +25,5 @@ fig.update_layout(
 
 with open("map.html", "w+") as write_file:
     write_file.write(fig.to_html(include_plotlyjs="cdn"))
+    
+fig.write_image("map.svg")

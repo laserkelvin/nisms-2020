@@ -58,7 +58,7 @@ figcaption {
 
 hr {
     overflow: visible; /* For IE */
-    padding: 0;
+    padding: 10px;
     border: none;
     border-top: medium double #333;
     color: #333;
