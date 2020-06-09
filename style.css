@@ -1,15 +1,31 @@
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans");
+
 html {
     font-family: "Work Sans", "Helvetica";
     text-rendering: optimizeLegibility;
     text-align: center;
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     justify-content: center;
     display: flex;
     align-items: center;
     background-color: #f9efde;
     min-height: 70%;
 }
+
+@media screen and (min-width: 75em) {
+    html {
+      font-size: 1.5em;
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    html {
+      width: 100%;
+    }
+  }
 
 footer {
     font-size: small;
@@ -20,16 +36,17 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.4vw;
+    font-size: 2em;
     text-decoration: underline;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.4em;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.2em;
+    font-weight: lighter;
 }
 
 p {
@@ -114,3 +131,11 @@ tbody tr {
 tbody tr:hover {
     background: #014055;
     }
+
+td > a {
+    color: #E2B842;
+}
+
+#titles {
+    text-align: left;
+}
