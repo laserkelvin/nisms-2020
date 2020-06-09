@@ -3,7 +3,7 @@ html {
     font-family: "Work Sans", "Helvetica";
     text-rendering: optimizeLegibility;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.3vw;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2vw;
     text-decoration: underline;
 }
 
@@ -49,6 +49,11 @@ a {
 
 strong {
     font-weight: bolder;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
 }
 
 figcaption {
@@ -81,27 +86,30 @@ table {
     border-radius: 0.25em;
     border-collapse: collapse;
     margin: 1em;
+    height: auto;
+    font-size: 1.3vw;
   }
-  th {
+
+th {
     border-bottom: 1px solid #364043;
     color: #E2B842;
-    font-size: 0.85em;
+    font-size: 1.4vw;
     font-weight: 600;
     padding: 0.5em 1em;
     text-align: left;
-  }
-  td {
+    }
+
+td {
     color: #fff;
     font-weight: 400;
     padding: 0.65em 1em;
-  }
-  .disabled td {
+    }
+.disabled td {
     color: #4F5F64;
-  }
-  tbody tr {
+    }
+tbody tr {
     transition: background 0.25s ease;
-  }
-  tbody tr:hover {
+    }
+tbody tr:hover {
     background: #014055;
-  }
-  
+    }
