@@ -1,0 +1,125 @@
+Session 1:
+  day: Monday
+  time: 4:00 PM UTC
+  chair: "Zachary Buchanan (University of California, Davis)"
+  speakers:
+    Stephen Kocheril:
+      page: 7
+      affil: Brown University
+      title: Aromaticity in metallaborocycles
+    Noureddin Osseiran:
+      page: 8
+      affil: University of Lille
+      title: "Microwave spectroscopy study supported by quantum chemistry calculations of Limonaketone, a key oxidation product of limonene"
+    Aravindh Nivas Marimuthu:
+      page: 9
+      affil: Radboud University
+      title: "Laboratory gas-phase vibrational spectra of [C<sub>3</sub>H<sub>3</sub>]<sup>+</sup> isomers and isotopologues by IRPD spectroscopy"
+    Oliver Zingsheim:
+      page: 10
+      affil: University of Cologne
+      title: Millimeter- to millimeter-wave double resonance spectroscopy
+Session 2:
+  day: Tuesday
+  time: 4:00 PM UTC
+  chair: "Ilsa Cooke (University of Rennes)"
+  speakers:
+    Johannes Bischoff:
+      affil: Fritz Haber Institute of the Max Planck Society
+      title: "A new experiment for the study and control of chiral molecules using high resolution electronic and microwave spectroscopy"
+      page: 11
+    Olivia Chitarra:
+      page: 12
+      affil: University of Paris-Saclay
+      title: "The pure rotational spectrum of hydroxymethyl radical reinvestigated to enable its interstellar detection"
+    André Eckhardt: 
+      page: 13
+      affil: Center for Astrophysics | Harvard & Smithsonian
+      title: "Spectroscopic characterization of intermediates in the abiotic formation of biomolecules"
+    Bryan Changala:
+      page: 14
+      affil: JILA / University of Colorado, Boulder
+      title: "Optical pumping and rotational energy transfer in C<sub>60</sub> fullerene"
+Session 3:
+  day: Tuesday
+  time: 11:00 PM UTC
+  chair: "Sommer Johansen (University of California, Davis)"
+  speakers:
+    Hayley Bunn:
+      affil: Emory University
+      page: 15
+      title: "The chemical pathways of O(<sup>1</sup>D) insertion into methylamine (CH<sub>3</sub>NH<sub>2</sub>)"
+    Maria Zdanovskaia:
+      page: 16
+      affil: University of Wisconsin, Madison
+      title: "Rotational spectroscopy of 2-cyano-1,3-butadiene: a molecule of astrochemical relevance"
+    J. H. Westerfield:
+      page: 17
+      affil: University of California Davis
+      title: "Re-examination of the rotational spectrum of methyl tert-butyl ether"
+    Zachariah Levey:
+      affil: University of New South Wales
+      title: Spectroscopic investigation of the phenalenyl radical
+Session 4:
+  day: Wednesday
+  time: 4:00 PM UTC
+  chair: "Marius Hermanns (University of Cologne)"
+  speakers:
+    Charles Markus:
+      page: 19
+      affil: University of Cologne
+      title: "High-resolution double resonance action spectroscopy in ion traps: Vibrational and Rotational Spectroscopy of CH<sub>2</sub>NH<sub>2</sub><sup>+</sup>"
+    Mattia Melosso:
+      page: 20
+      affil: University of Bologna
+      title: "Far-infrared laboratory spectroscopy of aminoacetonitrile and first interstellar detection of its vibrationally excited transitions"
+    Nadav Genossar:
+      page: 21
+      affil: Ben-Gurion University of the Negev
+      title: "Dissociation of the simplest ketohydroperoxide under the oznolysis of ethylene: theory and experiment hand-in-hand"
+    Anthony Roucou:
+      page: 22
+      affil: Catholic University of Louvain
+      title: "High-resolution photo-fragmentation spectroscopy of N<sub>2</sub>O<sup>+</sup>"
+Session 5:
+  day: Thursday
+  time: 10:00 AM UTC
+  chair: "Oliver Harper (University of Paris-Saclay)"
+  speakers:
+    Jasmin Borsovszky:
+      affil: University of New South Wales
+      page: 23
+      title: "Exploring the dissociation of C<sub>2</sub>"
+    Shefali Saxena:
+      page: 24
+      affil: King's College, London
+      title: "Isolated 1,4-napthoquinone and its step-wise microsolvation in the gasphase: structure and binding by rotational spectroscopy"
+    Thomas Hearne:
+      page: 25
+      affil: University of Rennes
+      title: "Rotational Spectroscopy with cold gas flows for kinetics studies"
+    Eszter Dudas:
+      page: 26
+      affil: University of Rennes
+      title: "High-temperature hypersonic Laval nozzle for non-LTE cavity ringdown spectroscopy"
+Session 6:
+  day: Friday
+  time: 4:00 PM UTC
+  chair: "Alicia Hernandez-Castillo (Fritz Haber Institute of the Max Planck Society)"
+  speakers:
+    Weslley Silva:
+      page: 27
+      affil: University of Manitoba
+      title: "Role of primary and secondary non-covalent interactions in the monohydrated complexes of small heterocycles such as trimethylene oxide and sulfide"
+    Justin Chaillot:
+      page: 28
+      affil: University of Grenoble
+      title: "Laser stabilization for accurate cavity ring down spectroscopy: application to molecular isotopic ratio"
+    Sederra Ross:
+      page: 29
+      affil: University of Massachusetts, Boston
+      title: "Electronic Spectroscopy of cis- and trans-meta-vinylbenzyl radicals"
+    Celina Bermudez:
+      affil: Spanish Council for Scientific Research
+      title: "The GACELA set up: a different approach to construct a broadband Fourier transform millimeterwave spectrometer"
+      page: 30

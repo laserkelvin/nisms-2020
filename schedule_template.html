@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NISMS Schedule</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        {% for session, data in sessions.items() %}
+            <h2>{{ session }}—{{ data.day }}, {{ data.time}}</h2>
+            <h3>Chair: {{ data.chair }}</h3>
+            <table>
+                <thead>
+                    <th>Speaker</th>
+                    <th>Institution</th>
+                    <th>Title</th>
+                </thead>
+                <tbody>
+                    {% for speaker, speak_data in data.speakers.items() %}
+                        <tr>
+                            <td><a href="nisms_program_6-8-20.pdf#page={{speak_data.page}}" target="_blank">{{speaker}}</a></td>
+                            <td>{{speak_data.affil}}</td>
+                            <td>{{speak_data.title}}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endfor %}
+    </body>
+</html>
