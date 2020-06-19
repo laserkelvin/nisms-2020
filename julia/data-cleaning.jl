@@ -95,4 +95,4 @@ reg_times .-= reg_times[1]
 relative_time = Dates.value.(reg_times) ./ (1000. * 60. * 60. * 24.);
 data[!,:RelativeTime] = relative_time;
 
-CSV.write("julia/cleaned.csv", data);
+CSV.write("cleaned.csv", data);
