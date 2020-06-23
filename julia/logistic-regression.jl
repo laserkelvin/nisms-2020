@@ -3,6 +3,7 @@ using Flux
 using Flux: relu
 using Flux: mse, crossentropy
 using Flux.Optimise: update!
+using Zygote
 using MLDataUtils
 using StatsBase
 using Random;
@@ -52,20 +53,21 @@ dumber_model(X)
 θ = Flux.params(dumber_model);
 optimizer = NADAM(1e-3);
 
-for i in range(1, stop = 50000)
-    grads = gradient(() -> calc_loss(X), θ)
-    for p in θ
-        update!(optimizer, p, grads[p])
+if isfile("julia/trained_model.bson")
+    for i in range(1, stop = 50000)
+        grads = gradient(() -> calc_loss(X), θ)
+        for p in θ
+            update!(optimizer, p, grads[p])
+        end
+        loss = calc_loss(X)
+        if mod(i, 1000) == 0
+            println("Current loss is $loss")
+        end
     end
-    loss = calc_loss(X)
-    if mod(i, 1000) == 0
-        println("Current loss is $loss")
-    end
+else
+    @load "julia/trained_model.bson" θ
+    Flux.loadparams!(dumber_model, θ)
 end
-# else
-#     @load "julia/trained_model.bson" θ
-#     Flux.loadparams!(dumber_model, θ)
-# end
 
 # Evaluate feature importance with input gradients; throw
 # noise at the model and see how each affects the final predicted
@@ -192,5 +194,43 @@ ylabel!("Y")
 title!("Wrong Decision Boundary")
 savefig("julia/decision_boundary.png")
 
+plots = [];
+for (index, group) in enumerate(groupby(data, :PosEncoding))
+    name = unique(group.Position)[1]
+    temp_X, temp_Y = df_to_data(group)
+    temp_embedding = embedder(transpose(temp_X))
+    temp_plot = contourf(
+        herp,
+        herp,
+        continuous;
+        levels = collect(range(0, stop = 1, length = 10)),
+        c = :Spectral_6,
+        background_color = "#f9efde",
+        alpha=0.8
+    )
+    scatter!(
+        temp_embedding[1, :],
+        temp_embedding[2, :],
+        zcolor = temp_Y[:],
+        lw = 1.0,
+        markerstrokecolor = "white",
+        leg = false
+        # c = :RdBu_10,
+    )
+    scatter!(
+        embeddings[1, :],
+        embeddings[2, :],
+        zcolor = Y[:],
+        leg = false,
+        alpha=0.1
+    ),
+    title!(name)
+    push!(plots, temp_plot)
+    savefig("julia/$name-contour.png")
+end
+
+plots[4]
 # dump the weights to disk
-@save "julia/trained_model.bson" θ
+# @save "julia/trained_model.bson" θ
+
+sum(data.HotDogEncoding)
