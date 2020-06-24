@@ -86,6 +86,10 @@ Session 5:
   time: 10:00 AM UTC
   chair: "Oliver Harper (University of Paris-Saclay)"
   speakers:
+    Eszter Dudas:
+      page: 26
+      affil: University of Rennes
+      title: "High-temperature hypersonic Laval nozzle for non-LTE cavity ringdown spectroscopy"
     Jasmin Borsovszky:
       affil: University of New South Wales
       page: 23
@@ -98,10 +102,6 @@ Session 5:
       page: 25
       affil: University of Rennes
       title: "Rotational Spectroscopy with cold gas flows for kinetics studies"
-    Eszter Dudas:
-      page: 26
-      affil: University of Rennes
-      title: "High-temperature hypersonic Laval nozzle for non-LTE cavity ringdown spectroscopy"
 Session 6:
   day: Friday
   time: 4:00 PM UTC
