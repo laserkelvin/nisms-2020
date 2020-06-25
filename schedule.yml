@@ -7,10 +7,6 @@ Session 1:
       page: 7
       affil: Brown University
       title: Aromaticity in metallaborocycles
-    Noureddin Osseiran:
-      page: 8
-      affil: University of Lille
-      title: "Microwave spectroscopy study supported by quantum chemistry calculations of Limonaketone, a key oxidation product of limonene"
     Aravindh Nivas Marimuthu:
       page: 9
       affil: Radboud University
@@ -123,3 +119,7 @@ Session 6:
       affil: Spanish Council for Scientific Research
       title: "The GACELA set up: a different approach to construct a broadband Fourier transform millimeterwave spectrometer"
       page: 30
+    Noureddin Osseiran:
+      page: 8
+      affil: University of Lille
+      title: "Microwave spectroscopy study supported by quantum chemistry calculations of Limonaketone, a key oxidation product of limonene"
